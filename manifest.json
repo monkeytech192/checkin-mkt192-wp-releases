@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.2.1",
+  "version": "5.3.2.2",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-07-04",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.2.1/checkin-mkt192-wp-5.3.2.1.zip",
+  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.2.2/checkin-mkt192-wp-5.3.2.2.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.2.1 — 2026-07-04</h4><ul><li><strong>Hotfix:</strong> Sửa regression 5.3.2.0 làm ảnh biến mất trên UI sau khi lưu hoá đơn (state local bị wipe khi update không gửi images).</li><li>Modal \"Tất cả hóa đơn\" cập nhật trạng thái up hình realtime, không cần đóng mở lại.</li></ul><h4>5.3.2.0 — 2026-07-04</h4><ul><li><strong>Sửa lỗi mất ảnh khách sau khi upload:</strong> API cập nhật hoá đơn không còn ghi đè trường images; toàn bộ thao tác ghi ảnh đi qua helper atomic (row lock), hết race condition giữa upload song song và cron.</li><li><strong>Cron an toàn hơn:</strong> khi cập nhật DB thất bại, giữ lại metadata để tự khôi phục link ảnh cuối ngày.</li><li><strong>Kênh cập nhật mới:</strong> chuyển từ share hosting sang GitHub Releases, bấm Update ngay trong WP Admin.</li></ul>"
+  "changelog": "<h4>5.3.2.2 — 2026-07-04</h4><ul><li><strong>Sửa auto-confirm thanh toán</strong> sau khi MonkeyPay server chuyển Cloud Run→VPS: plugin giữ URL server riêng đã chết nên app-tho tạo giao dịch thất bại, BDSD không khớp, chỉ bắn Lark chứ không xác nhận ở modal.</li><li><strong>URL server dùng một nguồn duy nhất</strong> từ plugin MonkeyPay (bỏ hằng + option trùng lặp của checkin) — hai plugin không còn lệch nhau.</li></ul>"
 }
