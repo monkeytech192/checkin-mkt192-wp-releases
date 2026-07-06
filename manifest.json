@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.2.5",
+  "version": "5.3.2.6",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-07-06",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.2.5/checkin-mkt192-wp-5.3.2.5.zip",
+  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.2.6/checkin-mkt192-wp-5.3.2.6.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
   "changelog": "<h4>5.3.2.5 — 2026-07-06</h4><ul><li><strong>Upload ảnh nhanh & ổn định:</strong> nén mọi loại ảnh kể cả HEIC iPhone, pipeline tuần tự kiểu app native, tự retry 3 lần, banner tiến trình theo từng ảnh.</li><li><strong>Fix mất cập nhật dịch vụ/thợ</strong> khi sửa hoá đơn nhanh liên tiếp; thanh toán chỉ chốt khi thay đổi đã lưu thành công.</li><li><strong>Giao diện mobile chuẩn app native:</strong> bottom navigation bar, Hoá đơn/Lịch hẹn dạng card với badge pastel + tem giảm giá, modal chi tiết dạng bottom sheet, viewer ảnh có gesture (kéo đóng, double-tap zoom), filter bar gọn.</li><li><strong>Giảm giá thủ công</strong> theo % hoặc đ khi không chọn CTKM; hết chớp trang, không tự cuộn lên đầu sau thao tác.</li></ul>"
 }
