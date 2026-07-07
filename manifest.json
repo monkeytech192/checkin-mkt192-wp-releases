@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.2.6",
+  "version": "5.3.2.7",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-07",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.2.6/checkin-mkt192-wp-5.3.2.6.zip",
+  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.2.7/checkin-mkt192-wp-5.3.2.7.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.2.6 — 2026-07-06</h4><ul><li><strong>Giao diện mới toàn app (flat native):</strong> bỏ gradient tím, 1 màu accent #0071E3, dashboard bố cục mới (segmented control, stat card phẳng), áp dụng cho app thợ, trang cá nhân, trang điểm danh.</li><li><strong>Lịch hẹn:</strong> modal chi tiết dạng bottom sheet, chip ID booking bấm để copy (icon → tick).</li><li><strong>Fix đăng nhập:</strong> admin thấy tab Admin ngay không cần reload; hết lỗi quyền khi sửa hồ sơ ngay sau login; đăng nhập Google được trong app PWA.</li><li><strong>Upload hồ sơ:</strong> avatar/CCCD nén phía client (hỗ trợ ảnh iPhone HEIC), lưu trực tiếp.</li><li><strong>Khác:</strong> fix header desktop, footer mới hiện trên mobile, mục Phiên bản + xoá bộ nhớ đệm ở tab Thêm.</li></ul>"
+  "changelog": "<h4>5.3.2.7 — 2026-07-07</h4><ul><li><strong>Redesign trang admin WordPress:</strong> header trắng flat hết màu tím, palette đồng bộ với app, sửa hàng loạt CSS token thiếu làm vỡ layout.</li><li><strong>Dashboard admin dữ liệu thật:</strong> lịch hẹn/doanh thu (so cùng kỳ)/hóa đơn/khách hàng, cảnh báo chờ xử lý, biểu đồ doanh thu 7 ngày, đánh giá 30 ngày, top thợ tháng, hoạt động gần đây, trạng thái kết nối thật.</li><li><strong>Trang home mượt hơn:</strong> slider/carousel/gallery chỉ chạy khi trong màn hình, bỏ blur động, ảnh gallery mobile cố định tỉ lệ — hết giật/rung khi cuộn.</li><li><strong>Fix hóa đơn:</strong> thêm sản phẩm sau khi tạo hóa đơn giờ cộng đúng vào tổng thanh toán.</li><li><strong>Fix phân quyền:</strong> từ chối đơn xin phép hoạt động cho admin/quản lý; thêm ô cấp quyền \"Từ chối đơn\" ở /admin.</li><li><strong>Fix mobile:</strong> card lịch hẹn sắp đến + chọn chi nhánh hết tràn ngang màn hình; modal xác nhận hết màu tím.</li></ul>"
 }
