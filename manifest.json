@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.3.0",
+  "version": "5.3.3.1",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-08-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.3.0/checkin-mkt192-wp-5.3.3.0.zip",
+  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.3.1.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.3.0</h4><ul><li>🔍 <strong>Mã QR thanh toán trong app thợ to hơn ~2,1 lần, khách dễ quét hơn</strong> — Ảnh QR trước đây bị ép vào khung vuông <code>150×150</code> kèm <code>object-fit: contain</code>, trong khi ảnh VietQR có tỉ lệ dọc (540×640, có logo trên và thông tin tài khoản dưới) nên ô QR thật chỉ còn ~87px. Nay ảnh co giãn theo bề ngang modal (tối đa 300px desktop / 320px mobile), chiều cao tự động theo đúng tỉ lệ và có trần theo chiều cao màn hình để máy nhỏ tự thu vừa: ô QR thật đạt ~186px trên máy 812px, ~155px trên iPhone SE.</li><li>🔧 <strong>Bỏ <code>!important</code> khoá kích thước ảnh QR</strong> — Rule responsive cho mobile (<code>max-width: 640px</code>) trước đây không bao giờ có tác dụng vì bị <code>!important</code> của rule gốc đè lên, nên mọi máy đều hiển thị 150px.</li><li>🐛 <strong>Modal thanh toán bị cắt mất nút \"Xác nhận đã thanh toán\"</strong> — Modal để <code>overflow: hidden</code> và không giới hạn chiều cao nên khi nội dung dài hơn màn hình (QR + nội dung CK + khối tự động kiểm tra MonkeyPay) phần cuối bị cắt, thợ không bấm được nút xác nhận. Nay modal giới hạn chiều cao theo màn hình (<code>100dvh</code>, fallback <code>100vh</code>) và cuộn được bên trong (<code>overscroll-behavior: contain</code> để không kéo trôi trang nền). Lỗi này đã tiềm ẩn từ trước trên máy nhỏ (iPhone SE) khi bật MonkeyPay.</li></ul>"
+  "changelog": "<h4>5.3.3.1</h4><ul><li>🔄 <strong>Kênh cập nhật chuyển sang tài khoản GitHub mới (<code>monkeytechvn</code>)</strong> — Hằng <code>CHECKIN_UPDATE_API</code> trỏ thẳng vào repo phát hành ở chủ mới thay vì dựa vào redirect của GitHub. Site đang chạy bản cũ vẫn nhận được bản này bình thường (URL cũ được GitHub chuyển hướng), cập nhật xong là dùng URL mới.</li><li>⚙️ <strong>Phát hành tự động bằng GitHub Actions</strong> — Đẩy tag <code>v*</code> là tự đóng gói zip, đẩy lên kênh phát hành và sửa <code>manifest.json</code> (version, link tải, ngày, changelog). Có bước kiểm tra cuối: tải thử đúng file zip mà site khách sẽ tải và mở ra đối chiếu version, sai là workflow báo đỏ chứ không để kênh update hỏng âm thầm.</li></ul>"
 }
