@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.3.2",
+  "version": "5.3.4.0",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-08-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.3.2.zip",
+  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.4.0.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.3.2</h4><ul><li>🐛 <strong>Nút \"Xác nhận đã thanh toán\" bị thanh điều hướng dưới của app thợ che mất</strong> — Modal thanh toán để <code>z-index: 100</code> trong khi <code>.bottom-nav</code> là <code>950</code>, nên phần cuối modal luôn nằm dưới thanh bar và không bấm được, cuộn cũng không tới. Nâng modal lên <code>z-index: 999</code> (đúng mức các modal khác trong app) để nó nằm trên thanh bar; kèm chừa <code>env(safe-area-inset-bottom)</code> để nút không dính vạch home trên iPhone. Modal vẫn cuộn được bên trong như bản trước.</li><li>🐛 <strong>Modal thêm/sửa khách hàng cũng bị che tương tự</strong> — Cùng nguyên nhân (<code>z-index: 100</code>), đã nâng lên <code>999</code>.</li></ul>"
+  "changelog": "<h4>5.3.4.0</h4><ul><li>🧑‍🔧 <strong>Trạng thái \"RESIGNED\" (đã nghỉ việc) cho thợ</strong> — Thêm vào ô chọn trạng thái ở trang Cài đặt nhân viên. Khi chọn, hệ thống hỏi thêm <strong>số điện thoại</strong> và <strong>địa chỉ tiệm mới</strong> của thợ (cả hai đều không bắt buộc) cùng tuỳ chọn <strong>vẫn hiện ảnh thợ ở trang chủ</strong>.</li><li>📇 <strong>Khách bấm vào thợ đã nghỉ sẽ thấy thông tin liên hệ</strong> — Nếu chủ tiệm bật hiện ở trang chủ, ảnh thợ vẫn nằm trong lưới giới thiệu (làm xám + gắn nhãn \"Đã nghỉ\"), bấm vào không mở form đặt lịch mà hiện popup báo thợ đã nghỉ kèm SĐT bấm gọi được và địa chỉ tiệm mới. Nếu chưa nhập thông tin nào thì popup mời khách chọn thợ khác. Thợ đã nghỉ không xuất hiện trong phần chọn thợ khi đặt lịch.</li><li>🐛 <strong>App thợ vẫn hiện thợ đã lưu trữ khi chọn thợ cho dịch vụ</strong> — Bộ lọc chỉ loại <code>OFF</code> và <code>DELETED</code> nên thợ <code>ARCHIVED</code> (lưu trữ) vẫn nằm trong danh sách. Nay gom về một hàm dùng chung loại cả <code>OFF</code>, <code>ARCHIVED</code>, <code>RESIGNED</code>, <code>DELETED</code>; áp dụng cho cả modal chọn thợ, danh sách thợ ở dịch vụ và ô bàn giao ca. Trạng thái <code>PAUSE</code> giữ nguyên như cũ.</li><li>🐛 <strong>Đơn nghỉ phép cũ có thể ghi đè mất trạng thái nghỉ việc</strong> — Trang chủ có đoạn tự ép trạng thái về <code>OFF</code>/<code>ON</code> theo đơn nghỉ phép; nay bỏ qua thợ đã nghỉ việc để không mất trạng thái.</li></ul>"
 }
