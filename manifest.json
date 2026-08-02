@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.3.1",
+  "version": "5.3.3.2",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-08-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.3.1.zip",
+  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.3.2.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.3.1</h4><ul><li>🔄 <strong>Kênh cập nhật chuyển sang tài khoản GitHub mới (<code>monkeytechvn</code>)</strong> — Hằng <code>CHECKIN_UPDATE_API</code> trỏ thẳng vào repo phát hành ở chủ mới thay vì dựa vào redirect của GitHub. Site đang chạy bản cũ vẫn nhận được bản này bình thường (URL cũ được GitHub chuyển hướng), cập nhật xong là dùng URL mới.</li><li>⚙️ <strong>Phát hành tự động bằng GitHub Actions</strong> — Đẩy tag <code>v*</code> là tự đóng gói zip, đẩy lên kênh phát hành và sửa <code>manifest.json</code> (version, link tải, ngày, changelog). Có bước kiểm tra cuối: tải thử đúng file zip mà site khách sẽ tải và mở ra đối chiếu version, sai là workflow báo đỏ chứ không để kênh update hỏng âm thầm.</li></ul>"
+  "changelog": "<h4>5.3.3.2</h4><ul><li>🐛 <strong>Nút \"Xác nhận đã thanh toán\" bị thanh điều hướng dưới của app thợ che mất</strong> — Modal thanh toán để <code>z-index: 100</code> trong khi <code>.bottom-nav</code> là <code>950</code>, nên phần cuối modal luôn nằm dưới thanh bar và không bấm được, cuộn cũng không tới. Nâng modal lên <code>z-index: 999</code> (đúng mức các modal khác trong app) để nó nằm trên thanh bar; kèm chừa <code>env(safe-area-inset-bottom)</code> để nút không dính vạch home trên iPhone. Modal vẫn cuộn được bên trong như bản trước.</li><li>🐛 <strong>Modal thêm/sửa khách hàng cũng bị che tương tự</strong> — Cùng nguyên nhân (<code>z-index: 100</code>), đã nâng lên <code>999</code>.</li></ul>"
 }
