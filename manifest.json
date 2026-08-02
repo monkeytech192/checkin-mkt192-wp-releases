@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.4.2",
+  "version": "5.3.4.3",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
   "last_updated": "2026-08-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.4.2.zip",
+  "package": "https://raw.githubusercontent.com/monkeytechvn/checkin-mkt192-wp-releases/dist/checkin-mkt192-wp-5.3.4.3.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
-  "changelog": "<h4>5.3.4.2</h4><ul><li>🚫 <strong>Thợ tạm dừng: chặn đặt lịch ngay trong form, kèm SĐT liên hệ riêng</strong> — Bỏ nhãn \"Tạm dừng\" và nút gọi ở thẻ thợ ngoài trang chủ. Thay vào đó, khi khách chọn thợ tạm dừng trong form Đặt Lịch, dòng trạng thái đổi thành *\"Thợ … hiện không còn hoạt động tại Shop. Quý khách vui lòng liên hệ … để đặt lịch riêng. Xin cảm ơn.\"* và <strong>nút \"Tiếp Theo\" bị khoá</strong>. Chọn thợ khác thì mọi thứ hoạt động như cũ. Nếu thợ chưa nhập SĐT, thông báo mời khách liên hệ Shop.</li></ul>"
+  "changelog": "<h4>5.3.4.3</h4><ul><li>🐛 <strong>Thanh nút ở form đặt lịch để nền trong suốt nên nội dung lòi lên đè vào nút</strong> — <code>.button-container</code> dính đáy (<code>position: sticky</code>) nhưng <code>background: transparent</code>, nên khi nội dung dài hơn khung modal thì chữ phía sau hiện xuyên qua và chồng lên nút. Nay đổi sang nền mờ dần về màu modal để nội dung cuộn chui gọn xuống dưới. Lỗi có sẵn từ trước, lộ ra rõ khi thông báo thợ tạm dừng dài 3 dòng.</li></ul>"
 }
