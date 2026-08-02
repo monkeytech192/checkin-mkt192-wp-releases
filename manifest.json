@@ -1,13 +1,13 @@
 {
   "name": "Checkin MKT192 WP",
   "slug": "checkin-mkt192-wp",
-  "version": "5.3.2.9",
+  "version": "5.3.3.0",
   "requires": "6.0",
   "tested": "7.0",
   "requires_php": "8.0",
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-08-02",
   "homepage": "https://monkeytech192.vn/",
-  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.2.9/checkin-mkt192-wp-5.3.2.9.zip",
+  "package": "https://github.com/monkeytech192/checkin-mkt192-wp-releases/releases/download/v5.3.3.0/checkin-mkt192-wp-5.3.3.0.zip",
   "description": "Plugin điểm danh cho nhân viên — check-in, hoá đơn, ảnh khách hàng, lương thưởng, tích hợp Zalo/Lark.",
   "changelog": "<h4>5.3.2.9 — 2026-07-09</h4><ul><li><strong>Fix app thợ (iOS):</strong> bottom bar + header hết trôi lên giữa màn hình khi cuộn — chặn iOS auto-zoom khi gõ ô tìm kiếm (maximum-scale=1, vẫn cho pinch-zoom).</li><li><strong>Trang home:</strong> các section vừa khít 1 màn hình trên desktop (100dvh + fluid clamp), section FAQ mới 6 câu hỏi dạng accordion mượt, nút Đặt lịch ở card thợ đồng bộ style nút hero.</li><li><strong>Hero loop-replay:</strong> cuộn hết trang cuộn tiếp sẽ quay về đầu và replay hero nối liền header (cả wheel lẫn chạm).</li><li><strong>Fix:</strong> nút Dịch vụ ở header cuộn đúng section (typo anchor); icon 2 card thống kê thẳng hàng; ảnh hero tự bust cache theo filemtime.</li></ul>"
 }
